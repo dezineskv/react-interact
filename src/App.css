@@ -1,0 +1,58 @@
+#root {
+  max-width: 1280px;
+  margin: 0;
+  padding: 2rem;
+  text-align: center;
+}
+
+button {
+  height: 100px;
+  width: 100px;
+  border: 4px solid rgb(202, 187, 187);
+  border-radius: 10px;
+  opacity: 0.1;
+  margin: 0.5rem;
+}
+
+button.on {
+  opacity: 1;
+}
+button.off {
+  opacity: 0.2;
+}
+div.show {
+  display: block;
+}
+div.hide {
+  display: none;
+}
+.blue {
+  background-color: blue;
+}
+.red {
+  background-color: red;
+}
+.orange {
+  background-color: orange;
+}
+.white {
+  background-color: white;
+}
+.gray {
+  background-color: gray;
+}
+.pink {
+  background-color: pink;
+}
+.purple {
+  background-color: purple;
+}
+.boxImage {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeIEH5JYQOwOiEj1FegIgTvLZifwkQlyEAFg&s");
+  background-size: cover;
+}
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}

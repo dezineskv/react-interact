@@ -1,0 +1,52 @@
+
+  [
+    {
+      "id": 1,
+      "name": "Square 1",
+      "type": "square",
+      "padcolor": "blue",
+      "on": true
+    },
+    {
+      "id": 2,
+      "name": "Square 2",
+      "type": "square",
+      "padcolor": "red",
+      "on": false
+    },
+    {
+      "id": 3,
+      "name": "Square 3",
+      "type": "square",
+      "padcolor": "gray",
+      "on": true
+    },
+    {
+      "id": 4,
+      "name": "Square 4",
+      "type": "square",
+      "padcolor": "pink",
+      "on": false
+    },
+    {
+      "id": 5,
+      "name": "Square 5",
+      "type": "square",
+      "padcolor": "white",
+      "on": false
+    },
+    {
+      "id": 6,
+      "name": "Square 6",
+      "type": "square",
+      "padcolor": "orange",
+      "on": true
+    },
+    {
+      "id": 7,
+      "name": "Square 7",
+      "type": "square",
+      "padcolor": "purple",
+      "on": true
+    }
+  ]
