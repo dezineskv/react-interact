@@ -25,8 +25,8 @@ function MusicNotes() {
         <h6 class="font-sans text-base font-bold text-current antialiased md:text-lg lg:text-xl mb-10">
           Add music to the sheet
         </h6>
-        <div className="flex flex-row gap-10 justify-center max-w-screen-lg">
-          <div class="w-full max-w-[200px] overflow-hidden rounded-lg border border-slate-200 bg-white shadow-lg shadow-slate-950/5">
+        <div className="flex flex-col md:flex-row  gap-5 justify-center md:max-w-screen-lg">
+          <div class="w-full sm:w-[100vw] md:max-w-[200px] rounded-lg border border-slate-200 bg-white shadow-lg shadow-slate-950/5">
             <div class="flex flex-col justify-center items-center h-full w-full rounded px-3 py-0 my-0">
               <h6 class="flex items-start justify-center font-sans text-base font-bold text-current antialiased md:text-lg lg:text-xl mb-5 mt-5">
                 Sheet music controller
@@ -64,9 +64,8 @@ function MusicNotes() {
                 </audio>
               </div>
             </div>
-     
           </div>
-          <div class="w-full max-w-[500px] overflow-hidden rounded-lg border border-slate-200 bg-white shadow-lg shadow-slate-950/5">
+          <div class="w-full sm:w-10/12 md:w-[500px] overflow-hidden rounded-lg border border-slate-200 bg-white shadow-lg shadow-slate-950/5">
             <div class="h-max w-full rounded px-3 py-2">
               <div
                 className="w-11/12 flex flex-row flex-wrap justify-start items-center gap-1 ml-5 h-full"
@@ -93,7 +92,6 @@ function MusicNotes() {
           </div>
         </div>
       </div>
-
     </>
   );
 }

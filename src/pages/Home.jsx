@@ -8,7 +8,7 @@ function Home() {
     <>
       <Cards />
       <div className="flex justify-center mx-auto mt-10 max-w-screen-md">
-        <div className="rounded-lg border shadow-sm bg-white border-slate-200 shadow-slate-950/5 relative flex h-[30rem] w-full max-w-[50rem] flex-col items-end justify-center overflow-hidden text-center">
+        <div className="rounded-lg border shadow-sm bg-white border-slate-200 shadow-slate-950/5 relative flex max-h-[30rem] w-full max-w-[50rem] flex-col items-end justify-center overflow-hidden text-center">
           <div className="p-2">
             <div className="absolute inset-0 m-0 h-full w-full rounded-none bg-cover bg-center">
               <img
@@ -19,7 +19,7 @@ function Home() {
             </div>
           </div>
           <div className="w-full rounded relative bottom-0 flex h-full flex-col items-center justify-startd px-6 py-14 md:px-12">
-            <h6 className="font-sans antialiased font-bold text-base md:text-lg lg:text-xl my-6 text-white">
+            <h6 className="font-sans antialiased font-bold text-base md:text-lg lg:text-xl my-6" style={{color: 'red', fontWeight: 900, fontFamily: 'cursive'}}>
               Kim Vidal
             </h6>
             <img
