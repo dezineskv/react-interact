@@ -28,7 +28,7 @@ function MusicNotes() {
         <div className="flex flex-row gap-10 justify-center max-w-screen-lg">
           <div class="w-full max-w-[200px] overflow-hidden rounded-lg border border-slate-200 bg-white shadow-lg shadow-slate-950/5">
             <div class="flex flex-col justify-center items-center h-full w-full rounded px-3 py-0 my-0">
-              <h6 class="flex items-start justify-center font-sans text-base font-bold text-current antialiased md:text-lg lg:text-xl mb-5">
+              <h6 class="flex items-start justify-center font-sans text-base font-bold text-current antialiased md:text-lg lg:text-xl mb-5 mt-5">
                 Sheet music controller
               </h6>
               <div

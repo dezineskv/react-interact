@@ -7,7 +7,7 @@ function Home() {
   return (
     <>
       <Cards />
-      <div className="bg-slate-500 flex w-full justify-center mx-auto mt-10">
+      <div className="flex justify-center mx-auto mt-10 max-w-screen-md">
         <div className="rounded-lg border shadow-sm bg-white border-slate-200 shadow-slate-950/5 relative flex h-[30rem] w-full max-w-[50rem] flex-col items-end justify-center overflow-hidden text-center">
           <div className="p-2">
             <div className="absolute inset-0 m-0 h-full w-full rounded-none bg-cover bg-center">
