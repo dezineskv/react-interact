@@ -2,7 +2,13 @@ import { useEffect, useState } from "react";
 import "./App.css";
 import Pads from "./components/Pads";
 import squaresdata from "./js/squares.json";
+import Cards from "./components/Cards";
+import MainLayout from "./layouts/MainLayout";
+import MusicNotes from "./components/MusicNotes";
+import Nav from "./components/Nav";
 import Editing from "./components/Editing";
+import Home from "./pages/Home";
+import { Link, Routes, Route } from "react-router-dom";
 
 function App() {
   const [squares, setSquares] = useState(squaresdata);
@@ -54,11 +60,19 @@ function App() {
 
   return (
     <>
-      <div className="w-screen h-screen flex flex-col items-center justify-center">
-        <h2 className="w-full text-2xl font-bold text-black my-2 ml-2">
+      <Nav />
+      <Routes>
+        <Route element={<MainLayout />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/music-notes" element={<MusicNotes />} />
+        <Route path="/" element={<Cards />} />
+      </Routes>
+
+      <div className="w-screen flex flex-col items-center justify-center">
+         <h2 className="w-full text-2xl font-bold text-black mt-10 mb-2 ml-2">
           Color Power
         </h2>
-        <div className="w-full flex items-center justify-center mx-auto px-6 mb-5">
+         <div className="w-full flex items-center justify-center mx-auto px-6 mb-5">
           <div className="bg-black flex flex-col md:flex-row justify-center gap-2 rounded-xlg mx-auto p-10 max-w-3xl">
             <div className="w-[200px] min-w-[160px] flex flex-col justify-center gap-4  bg-white rounded-lg items-center mx-auto my-2 pb-2">
               <div className="w-[160px]">
@@ -78,7 +92,7 @@ function App() {
                   className="items-center border-4 border-solid border-gray-600 rounded-full p-2 mb-2 size-16"
                   onClick={turnAllOn}
                 >
-                  <div className="text-xs/3  inline-flex ">Switch On</div>
+                  <div className="text-xs  inline-flex ">Switch On</div>
                 </div>
               </div>
             </div>
@@ -87,11 +101,8 @@ function App() {
             </div>
           </div>
         </div>
-        {/* next section */}
-        <h2 className="w-full text-2xl font-bold text-black my-2 ml-2">
-          Music Inventory
-        </h2>
-        <div className="w-full flex items-center justify-center mx-auto px-6 mb-5">
+       {/* next section */}
+        {/* <div className="w-full flex items-center justify-center mx-auto px-6 mb-5">
           <div className="bg-black flex flex-col md:flex-row justify-center gap-2 rounded-xlg mx-auto p-10 max-w-4xl">
             <div className="w-[200px] min-w-[160px] flex flex-col justify-center gap-4 bg-white rounded-lg items-center mx-auto my-2 pb-2 ml-2">
               <div className="w-[160px]">
@@ -138,7 +149,8 @@ function App() {
               />
             </div>
           </div>
-        </div>
+        </div> */}
+     
       </div>
     </>
   );

@@ -1,3 +1,10 @@
+/* @plugin "daisyui"; */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
 #root {
   max-width: 1280px;
   margin: 0;
@@ -51,8 +58,8 @@ div.hide {
   background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeIEH5JYQOwOiEj1FegIgTvLZifwkQlyEAFg&s");
   background-size: cover;
 }
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.music-sheet {
+  background-image: url("https://www.apassion4jazz.net/public/m-paper.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
