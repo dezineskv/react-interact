@@ -5,8 +5,8 @@ import "../App.css";
 function Cards() {
   return (
     <>
-      <div className="flex flex-col md:flex-row  gap-5 justify-center ">
-        <div className="w-full max-w-xs overflow-hidden rounded-lg border border-slate-200 bg-white shadow-lg shadow-slate-950/5 h-[200px]">
+      <div className="flex sm:flex-col flex-wrap md:flex-row  gap-5 justify-center w-full">
+        <div className="sm:max-w-lg md:max-w-xs overflow-hidden rounded-lg border border-slate-200 bg-white shadow-lg shadow-slate-950/5 h-[200px]">
           <div className="h-max w-full rounded px-3 py-2">
             <h6 className="font-sans text-base font-bold text-current antialiased md:text-lg lg:text-xl">
               Portfolio
@@ -27,7 +27,7 @@ function Cards() {
             </Link>
           </div>
         </div>
-        <div className="w-full max-w-xs overflow-hidden rounded-lg border border-slate-200 bg-white shadow-lg shadow-slate-950/5 h-[200px]">
+        <div className="sm:max-w-lg md:max-w-xs  overflow-hidden rounded-lg border border-slate-200 bg-white shadow-lg shadow-slate-950/5 h-[200px]">
           <div className="h-max w-full rounded px-3 py-2">
             <h6 className="font-sans text-base font-bold text-current antialiased md:text-lg lg:text-xl">
               Github
