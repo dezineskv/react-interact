@@ -25,10 +25,10 @@ function MusicNotes() {
         <h6 class="font-sans text-base font-bold text-current antialiased md:text-lg lg:text-xl mb-10">
           Add music to the sheet
         </h6>
-        <div className="flex flex-col md:flex-row  gap-5 justify-center md:max-w-screen-lg">
-          <div class="w-full sm:w-[100vw] md:max-w-[200px] rounded-lg border border-slate-200 bg-white shadow-lg shadow-slate-950/5">
+        <div className="flex sm:flex-col md:flex-row gap-5 justify-center md:w-10/12 mx-auto">
+          <div class="sm:w-full sm:min-w-[200px] sm:flex-wrap md:min-w-[200px] rounded-lg border border-slate-200 bg-white shadow-lg shadow-slate-950/5">
             <div class="flex flex-col justify-center items-center h-full w-full rounded px-3 py-0 my-0">
-              <h6 class="flex items-start justify-center font-sans text-base font-bold text-current antialiased md:text-lg lg:text-xl mb-5 mt-5">
+              <h6 class="flex items-start justify-center font-sans text-base font-bold text-current antialiased md:text-lg lg:text-xl mb-5 mt-5 w-full">
                 Sheet music controller
               </h6>
               <div
